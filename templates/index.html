@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EPC</title>
+    <!--Swiper css-->
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css" />
+    <!--Tailwind css-->
+    <link href="../css/style.css" rel="stylesheet" />
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-poppins bg-slate-50">
+    <!--Start Header-->
+    <header class="bg-white">
+      <div class="container md:flex md:justify-between md:items-center">
+        <div class="phone-nav flex justify-between items-center">
+          <div class="logo">
+            <img src="../imgs/epcBlue.svg" alt="logo" class="object-contain" />
+          </div>
+          <div
+            class="menu-btn rounded-full p-2 transition duration-500 md:hidden"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-7 w-7 text-blue-900"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M4 6h16M4 12h16m-7 6h7"
+              />
+            </svg>
+          </div>
+        </div>
+        <nav class="menu">
+          <ul class="flex md:flex-row flex-col gap-8 py-4 md:py-0">
+            <li>
+              <a href="index.html" class="nav-link">home</a>
+            </li>
+            <li>
+              <a href="index.html#about" class="nav-link about-link"
+                >about us</a
+              >
+            </li>
+            <li>
+              <a href="./projects-page.html" class="nav-link">projects</a>
+            </li>
+            <li>
+              <a href="./courses-page.html" class="nav-link">courses</a>
+            </li>
+            <li>
+              <a href="./articles-page.html" class="nav-link">news</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--End Header-->
+
+    <!--Start Main-->
+    <main>
+      <!--Start Hero-->
+      <section
+        class="relative flex justify-center items-center h-[32rem] bg-[url('../imgs/hero.jpg')] bg-cover bg-center bg-no-repeat section"
+      >
+        <div class="dark-layer"></div>
+        <div class="wrapper container text-center text-white z-10">
+          <h1
+            class="font-bold md:text-5xl sm:text-4xl text-3xl mb-4 leading-snug"
+          >
+            Engineering Process Club
+          </h1>
+          <p
+            class="mx-auto sm:text-lg text-sm font-normal sm:font-light tracking-wide"
+          >
+            We are a scientific club based on the national polytechnic school of
+            oran (ENPO), Algeria
+          </p>
+        </div>
+      </section>
+      <!--End Hero-->
+      <!--Start About-->
+      <section id="about" class="section">
+        <div class="container">
+          <h2 class="section-title">about us</h2>
+          <p class="lg:w-2/3 mx-auto text-lg text-gray-600 mb-10 text-center">
+            We are a team of students with high aspiration, Our goal is to help
+            students of our school to develop their skills in diffrent areas
+            such as soft skills, problem solving skills and necessary technical
+            skills to succeed in their working life
+          </p>
+          <div class="stats flex justify-center items-center gap-4 flex-wrap">
+            <div class="stat">
+              <img src="../imgs/student.svg" alt="student" class="w-12" />
+              <span class="text-sm font-medium">+20 Student</span>
+            </div>
+            <div class="stat">
+              <img src="../imgs/project.svg" alt="project" class="w-12" />
+              <span class="text-sm font-medium">+25 Project</span>
+            </div>
+            <div class="stat">
+              <img src="../imgs/course.svg" alt="student" class="w-12" />
+              <span class="text-sm font-medium">+15 Courses</span>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End About-->
+      <!--Start Event-->
+      <!-- <section
+        class="section py-5 bg-[url('../imgs/event.jpg')] bg-cover bg-center bg-no-repeat relative"
+      >
+        <div class="dark-layer"></div>
+        <div class="container text-white relative z-10">
+          <h2 class="uppercase text-center text-2xl font-bold mb-4">
+            next event
+          </h2>
+          <p class="font-medium text-center">
+            Official launch of Engineering Process Club
+          </p>
+          <p class="event-date text-center text-bold text-sm">2022-11-29</p>
+          <div class="countdown flex gap-4 justify-center items-center my-8">
+            <div class="days deadline-format">
+              <h3 class="font-bold text-xl">09</h3>
+              <span class="uppercase">days</span>
+            </div>
+            <div class="hours deadline-format">
+              <h3 class="font-bold text-xl">09</h3>
+              <span class="uppercase">hours</span>
+            </div>
+            <div class="mins deadline-format">
+              <h3 class="font-bold text-xl">09</h3>
+              <span class="uppercase">mins</span>
+            </div>
+            <div class="secs deadline-format">
+              <h3 class="font-bold text-xl">09</h3>
+              <span class="uppercase">secs</span>
+            </div>
+          </div>
+        </div>
+      </section> -->
+      <!--End Event-->
+
+      <!--Start Projects-->
+      <section id="projects" class="section">
+        <div class="container">
+          <h2 class="section-title">projects</h2>
+          <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide group">
+                <div class="swiper-img bg-[url(../imgs/project1.jpg)]"></div>
+                <div class="gradient-img">
+                  <h3>Semi controled composter</h3>
+                </div>
+                <a href="./composter.html" class="project-link"></a>
+              </div>
+              <div class="swiper-slide group">
+                <div class="swiper-img bg-[url(../imgs/project2.jpg)]"></div>
+                <div class="gradient-img">
+                  <h3>Oils Extraction</h3>
+                </div>
+                <a href="./oils.html" class="project-link"></a>
+              </div>
+              <div class="swiper-slide group">
+                <div
+                  class="relative swiper-img more-projects bg-[url(../imgs/more-projects.jpg)]"
+                ></div>
+                <div class="dark-layer"></div>
+                <h3
+                  class="absolute text-white font-bold text-xl capitalize top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20"
+                >
+                  show more
+                </h3>
+                <a
+                  href="./projects-page.html"
+                  class="w-full h-full absolute top-0 left-0 z-20"
+                ></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!--End Projects-->
+      <!--Start Courses-->
+      <section id="courses" class="section">
+        <h2 class="section-title">courses</h2>
+        <div class="container flex justify-center items-center gap-4 flex-wrap">
+          There are no courses available yet
+        </div>
+        <div class="container my-10">
+          <a href="./courses-page.html" class="special-link"
+            ><span class="special-link-txt">more courses</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </div>
+      </section>
+      <!--End Courses-->
+      <!--Start latest news-->
+      <section id="news" class="section">
+        <div class="container">
+          <h2 class="section-title">latest news</h2>
+          <div class="flex justify-center gap-4 items-center flex-wrap mb-8">
+            There are no articles yet
+          </div>
+          <a href="./articles-page.html" class="special-link"
+            ><span class="special-link-txt">more news</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="h-5 w-5"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M12.293 5.293a1 1 0 011.414 0l4 4a1 1 0 010 1.414l-4 4a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-2.293-2.293a1 1 0 010-1.414z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </a>
+        </div>
+      </section>
+      <!--End latest news-->
+      <!--Start newsletter-->
+      <section
+        class="section flex flex-col max-w-4xl mx-auto overflow-hidden bg-white rounded-lg shadow-lg md:flex-row md:h-48"
+      >
+        <div
+          class="md:flex md:items-center md:justify-center md:w-1/2 md:bg-gray-700"
+        >
+          <div class="px-6 py-6 md:px-8 md:py-0">
+            <h2
+              class="text-lg font-bold text-gray-700 md:text-gray-100 capitalize"
+            >
+              subscribe to our
+              <span class="text-blue-600 md:text-blue-300">newsletter</span>
+            </h2>
+
+            <p class="mt-2 text-sm text-gray-600 md:text-gray-400 capitalize">
+              get the latest news and courses of our club and our school
+            </p>
+          </div>
+        </div>
+
+        <div class="flex items-center justify-center pb-6 md:py-0 md:w-1/2">
+          <form>
+            <div
+              class="flex flex-col p-1 overflow-hidden border rounded-lg lg:flex-row focus-within:ring focus-within:ring-opacity-40 focus-within:border-blue-400 focus-within:ring-blue-300"
+            >
+              <input
+                class="px-6 py-2 text-gray-700 placeholder-gray-500 bg-white outline-none focus:placeholder-transparent"
+                type="text"
+                name="email"
+                placeholder="Enter your email"
+                aria-label="Enter your email"
+              />
+
+              <button
+                class="px-4 py-3 text-sm font-medium tracking-wider text-gray-100 uppercase transition-colors duration-200 transform bg-gray-700 rounded-lg hover:bg-gray-600 focus:bg-gray-600 focus:outline-none"
+              >
+                subscribe
+              </button>
+            </div>
+          </form>
+        </div>
+      </section>
+      <!--End newsletter-->
+    </main>
+    <!--End Main-->
+    <!--Start Footer-->
+    <footer class="bg-gray-700 text-white py-1">
+      <div
+        class="container flex lg:flex-row flex-col lg:justify-between justify-center items-center flex-wrap"
+      >
+        <div class="logo">
+          <img
+            src="../imgs/footer-logo.svg"
+            alt="logo"
+            class="object-contain"
+          />
+        </div>
+        <div class="rights capitalize mb-2 lg:mb-0">
+          all rights reserved &copy; EPC (engineering process club)
+        </div>
+        <div class="contact">
+          <a
+            href="mailto: info@epc.com"
+            class="hover:text-blue-600 transition ease-in-out duration-500"
+            >info@epc.com</a
+          >
+          <div class="social-media flex items-center gap-1">
+            <a href="#" id="facebook" class="social-media-link"
+              ><svg
+                width="35"
+                height="35"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8Z"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M11 21C11 18 11 15 11 12C11 9.8125 11.5 8 15 8"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M9 13H11H15"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a href="#" id="instagram" class="social-media-link">
+              <svg
+                width="35"
+                height="35"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12 16C14.2091 16 16 14.2091 16 12C16 9.79086 14.2091 8 12 8C9.79086 8 8 9.79086 8 12C8 14.2091 9.79086 16 12 16Z"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16Z"
+                  stroke="currentColor"
+                  stroke-width="1.5"
+                />
+                <path
+                  d="M17.5 6.51L17.51 6.49889"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+            <a href="#" id="linkedin" class="social-media-link">
+              <svg
+                width="35"
+                height="35"
+                stroke-width="1.5"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M21 8V16C21 18.7614 18.7614 21 16 21H8C5.23858 21 3 18.7614 3 16V8C3 5.23858 5.23858 3 8 3H16C18.7614 3 21 5.23858 21 8Z"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M7 17V13.5V10"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M11 17V13.75M11 10V13.75M11 13.75C11 10 17 10 17 13.75V17"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  d="M7 7.01L7.01 6.99889"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!--End Footer-->
+    <!--start back to top btn-->
+    <span class="back-to-top">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        class="h-6 w-6"
+        fill="none"
+        viewBox="0 0 24 24"
+        stroke="currentColor"
+        stroke-width="2"
+      >
+        <path
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          d="M5 15l7-7 7 7"
+        />
+      </svg>
+    </span>
+    <!--end back to top btn-->
+    <!--main Javascript-->
+    <script src="../js/app.js"></script>
+    <!--swiper js-->
+    <script src="../js/swiper.js" type="module"></script>
+    <!--all js-->
+    <script src="../js/all.js"></script>
+  </body>
+</html>

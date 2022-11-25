@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EPC</title>
+    <!--Tailwind css-->
+    <link href="../css/style.css" rel="stylesheet" />
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-poppins bg-slate-50">
+    <main>
+      <div
+        class="head w-full h-12 bg-white text-black flex justify-end items-center px-6 py-4 md:hidden"
+      >
+        <div class="py-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-8 h-8 cursor-pointer hover:text-blue-500 transition menu-btn"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"
+            />
+          </svg>
+        </div>
+      </div>
+      <nav
+        class="fixed top-0 md:translate-x-0 h-screen w-96 bg-gray-800 -translate-x-96 transition-all"
+      >
+        <div class="w-full h-32 p-10">
+          <img src="../imgs/epcW.svg" alt="logo" class="w-full h-full" />
+        </div>
+        <button class="side-btn" data-id="new-article">articles</button>
+        <button class="side-btn" data-id="new-course">courses</button>
+        <button class="side-btn" data-id="new-event">events</button>
+        <button class="side-btn" data-id="new-project">projects</button>
+        <div class="w-full flex justify-center items-center mt-10 md:hidden">
+          <button class="btn watch mx-auto inline-block close-panel">
+            close
+          </button>
+        </div>
+      </nav>
+      <section class="admin-wrapper">
+        <div class="pane" id="new-article">
+          <h2 class="pane-title">new article</h2>
+          <form action="">
+            <label for="title" class="admin-label">article title</label>
+            <input type="text" name="title" class="admin-input" />
+            <label for="author" class="admin-label">author name</label>
+            <input type="author" name="author" class="admin-input" />
+            <label for="desc" class="admin-label">description</label>
+            <textarea
+              name="description"
+              id="desc"
+              class="resize-none admin-input w-80 h-40"
+            ></textarea>
+            <label for="article-img" class="admin-label">article image</label>
+            <input type="file" name="article-img" id="article-img" />
+            <label for="article-text" class="admin-label"
+              >article content</label
+            >
+            <textarea
+              name="article-text"
+              id="article-text"
+              class="admin-input w-full h-64"
+            ></textarea>
+            <div class="flex justify-center my-4">
+              <input
+                type="submit"
+                value="submit"
+                class="btn admin-form-btn download cursor-pointer"
+              />
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+    <!--js-->
+    <script src="../js/admin.js"></script>
+  </body>
+</html>

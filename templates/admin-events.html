@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EPC</title>
+    <!--Tailwind css-->
+    <link href="../css/style.css" rel="stylesheet" />
+    <!--Google fonts-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body class="font-poppins bg-slate-50">
+    <main>
+      <div
+        class="head w-full h-12 bg-white text-black flex justify-end items-center px-6 py-4 md:hidden"
+      >
+        <div class="py-2">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke-width="1.5"
+            stroke="currentColor"
+            class="w-8 h-8 cursor-pointer hover:text-blue-500 transition menu-btn"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25H12"
+            />
+          </svg>
+        </div>
+      </div>
+      <nav
+        class="fixed top-0 md:translate-x-0 h-screen w-96 bg-gray-800 -translate-x-96 transition-all"
+      >
+        <div class="w-full h-32 p-10">
+          <img src="../imgs/epcW.svg" alt="logo" class="w-full h-full" />
+        </div>
+        <button class="side-btn" data-id="new-article">articles</button>
+        <button class="side-btn" data-id="new-course">courses</button>
+        <button class="side-btn" data-id="new-event">events</button>
+        <button class="side-btn" data-id="new-project">projects</button>
+        <div class="w-full flex justify-center items-center mt-10 md:hidden">
+          <button class="btn watch mx-auto inline-block close-panel">
+            close
+          </button>
+        </div>
+      </nav>
+      <section class="admin-wrapper h-full">
+        <h1 class="text-center text-2xl font-bold uppercase">Events</h1>
+        <form action="" class="flex justify-center items-center my-4">
+          <input
+            type="text"
+            placeholder="Enter Event Title"
+            class="search-input"
+          />
+          <input type="submit" value="Search" class="search-btn" />
+        </form>
+        <div class="flex flex-col justify-center items-center gap-2 my-6">
+          <article
+            class="w-11/12 bg-white border rounded-md flex flex-col gap-4 justify-between p-3"
+          >
+            <h3 class="font-bold capitalize">Prepa Day</h3>
+            <div class="text sm font-semibold">12-12-2012</div>
+            <div class="self-end">
+              <a href="#" class="btn download text-xs font-bold p-2">Modify</a>
+              <a href="#" class="btn watch text-xs font-bold p-2">Delete</a>
+            </div>
+          </article>
+        </div>
+        <div class="flex justify-end items-center w-11/12 mx-auto">
+          <a href="#" class="btn download font-extrabold">new event</a>
+        </div>
+      </section>
+    </main>
+    <!--js-->
+    <script src="../js/admin.js"></script>
+  </body>
+</html>
